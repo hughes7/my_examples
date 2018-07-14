@@ -15,5 +15,7 @@ expected = dataset.target
 predicted = model.predict(dataset.data)
 
 # summarize
+print("Report:")
 print(metrics.classification_report(expected, predicted))
+print("Confusion matrix:")
 print(metrics.confusion_matrix(expected, predicted))
